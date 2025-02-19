@@ -2777,7 +2777,7 @@ end
 --// END OF UI LIBRARY CREATION--
 local Library = Kavo
 
-local Window = Library.CreateLib(" ( ͡° ͜ʖ ͡°) CrimHook [v.1.0.0]", "Synapse")
+local Window = Library.CreateLib(" ( ͡° ͜ʖ ͡°) CrimSkid [v.1.0.0] - 6xenz leaked this", "Synapse")
 
 local Tab = Window:NewTab("Main")
 local Tab2 = Window:NewTab("Combat")
@@ -2786,24 +2786,24 @@ local Tab4 = Window:NewTab("Config")
 local Tab5 = Window:NewTab("LegitBot")
 local Tab6 = Window:NewTab("Teleports")
 
-local Section = Tab:NewSection("CrimHook Main Functions")
-local Section2 = Tab2:NewSection("CrimHook Combat Functions")
-local Section3 = Tab3:NewSection("CrimHook Visual Functions")
-local Section4 = Tab4:NewSection("CrimHook Configurations")
-local Section5 = Tab5:NewSection('CrimHook Legit Features')
-local SectionT = Tab6:NewSection("CrimHook Teleport Functions")
+local Section = Tab:NewSection("CrimSkid Main Functions")
+local Section2 = Tab2:NewSection("CrimSkid Combat Functions")
+local Section3 = Tab3:NewSection("CrimSkid Visual Functions")
+local Section4 = Tab4:NewSection("CrimSkid Configurations")
+local Section5 = Tab5:NewSection('CrimSkid Legit Features')
+local SectionT = Tab6:NewSection("CrimSkid Teleport Functions")
 
 local function Notify(text)
-        game:GetService("StarterGui"):SetCore("SendNotification", { Title = "[CRIM-HOOK]"; Text = text; Duration = 3; })
+        game:GetService("StarterGui"):SetCore("SendNotification", { Title = "[CRIM-SKID]"; Text = text; Duration = 3; })
     end
 
-GuiNotify("CrimHook Activated", "Welcome to CrimHook. Your account has been sucessfully authorized to use CrimHook!", "Continue", "none")
+GuiNotify("CrimSkid Activated", "Welcome to CrimSkid. Your account has been sucessfully authorized to use CrimSkid!", "Continue", "none")
 task.wait(2)
-Notify("CrimHook is currently loading, please wait for functions to appear.")
+Notify("CrimSkid is currently loading, please wait for functions to appear.")
 task.wait(5)
 
 
-SectionT:NewLabel("CrimHook Teleports currently work with out the need for bypasses.")
+SectionT:NewLabel("CrimSkid Teleports currently work with out the need for bypasses.")
 --// REPEATED FUNCTIONS LOGIC--
 -- inf yield bang works player tp any distancce
 -- inf yield has anti-fling that works
@@ -3162,7 +3162,7 @@ end)
 
 
 
-Section:NewLabel("CrimHook is unfinished. Bugs may occur.")
+Section:NewLabel("CrimSkid is unfinished. Bugs may occur.")
 
 Section:NewButton("Refresh Character", "Refreshes the character the normal way.", function()
      local args1 = {
@@ -3421,7 +3421,7 @@ Section3:NewColorPicker("Edit Viewmodel Color", "Changes viewmodel colors", Colo
         viewmodel["Right Arm"].Color = color
         viewmodel["Left Arm"].Color = color
     else
-        warn("CrimHook -->> Viewmodel Dependencies Not Found. (EDIT VIEWMODEL COLOR) Function has failed.")
+        warn("CrimSkid -->> Viewmodel Dependencies Not Found. (EDIT VIEWMODEL COLOR) Function has failed.")
     end
 end)
 
@@ -3879,13 +3879,13 @@ Uis.InputBegan:Connect(function(Key)
                 local Target;Target = GetNearestTarget()
                 if Target ~= nil then 
                     AimlockTarget = Target
-                    Notify("CrimHook", "is currently locking: "..tostring(AimlockTarget), "", 3)
+                    Notify("CrimSkid", "is currently locking: "..tostring(AimlockTarget), "", 3)
                 end
             end)
         end
         if Key.KeyCode == Enum.KeyCode[AimlockToggleKey] then 
             Aimlock = not Aimlock
-            Notify("CrimHook", "Aimbot set to: "..tostring(Aimlock), "", 3)
+            Notify("CrimSkid", "Aimbot set to: "..tostring(Aimlock), "", 3)
         end
     end
 end)
@@ -4983,7 +4983,7 @@ Section5:NewToggle("Toggle ESP [DISABLED]", "[LAG WARNING]: ESP IN BETA.", funct
   --local ESPLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Exunys-ESP/main/src/ESP.lua"))()
     if state then
         Notify("This feature is currently disabled, or is not supported on your executor. ErrorCode: DSBLD")
-        print("CrimHook: ESP CURRENTLY DISABLED DUE TO EXECUTOR ISSUES AND POTENTIAL LAG. PLEASE USE THIS FEATURE LATER.")
+        print("CrimSkid: ESP CURRENTLY DISABLED DUE TO EXECUTOR ISSUES AND POTENTIAL LAG. PLEASE USE THIS FEATURE LATER.")
        -- ExunysDeveloperESP:Exit()
         --ExunysDeveloperESP.Load()
     else
@@ -5020,7 +5020,7 @@ local itemsToUpdate = {
 -- Define the values to update
 local newValues = {
     Level = 1,
-    TypeName = "CrimHook Pre-Unlocked",
+    TypeName = "CrimSkid Pre-Unlocked",
 }
 
 -- Function to update the values
