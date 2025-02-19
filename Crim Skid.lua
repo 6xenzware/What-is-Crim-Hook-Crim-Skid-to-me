@@ -5377,8 +5377,20 @@ SectionT:NewButton("Teleport to Safety Roof", "Teleports you to a specific world
         end
     end
 end)
+-- LocalScript
+local notificationService = game:GetService("StarterGui")
 
+-- Function to send a notification
+local function sendNotification(title, message, duration)
+    notificationService:SetCore("SendNotification", {
+        Title = title,
+        Text = message,
+        Duration = duration or 5, -- Default duration is 5 seconds
+    })
+end
 
+-- Example usage
+sendNotification("Please Join RIPs!", "gg/NUsSGtr5P3", 5)
 
 
 
